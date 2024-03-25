@@ -9,7 +9,6 @@ a{text-decoration: none;}
 .unset{padding: 0; margin: 0; list-style: none;}
 img{max-width: 100%; height: auto;}
 
-
 :root{
     --color-black : #0b0f21;
     --color-bluebg : #15269c;
@@ -21,6 +20,9 @@ img{max-width: 100%; height: auto;}
     --font-family: "Archivo", sans-serif;
 }
 
+a.secondarybtn{font-size: 16px; font-weight: 500; line-height: normal; color: var(--color-white); padding: 15px 20px; background: var(--color-limegreen); display: inline-block; border-radius: 5px; transition: all 0.3s linear; letter-spacing: 0.5px;}
+a.secondarybtn:hover{transform: translateY(-5px);}
+
 .headersec {background: var(--color-bluebg); padding: 15px 0; }
 .headersec .container{display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center; gap: 30px;}
 .headersec .headerright{display: flex; font-size: 0; align-items: center; gap: 50px;} 
@@ -29,6 +31,22 @@ img{max-width: 100%; height: auto;}
 .headersec .topnav a:hover, .headersec .topnav a.active{color: var(--color-limegreen);}
 .headersec .appointmentbtn a{display: inline-block; font-size: 16px; font-weight: 600; line-height: 16px; color: var(--color-white); background: var(--color-lightblue); transition: all 0.3s linear; border-radius: 6px; padding: 20px 30px;}
 .headersec .appointmentbtn a:hover{transform: translateY(-5px) ;}
+
+.herosec{background: var(--color-bluebg); padding: 80px 0;}
+.herosec .herobox{display: grid; grid-template-columns: 0.75fr 1fr; gap: 30px; align-items: center; justify-content: space-between;}
+.herosec h1{font-size: 68px; color: var(--color-white); font-weight: 700; line-height: 78px;}
+.herosec h1 span, .herosec p span{display: block;}
+.herosec p{font-size: 20px; color: var(--color-white); font-weight: 500; line-height: 32px; margin: 30px 0;}
+.herosec .heroright .imgbox{display: flex; justify-content: end; animation: bannerimg 3s linear infinite alternate;}
+
+@keyframes bannerimg{
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
 
 .copyrightsec{padding: 15px; background: var(--color-lightviolet); text-align: center;}
 .copyrightsec p{color: var(--color-white); font-size: 16px; font-weight: 400;}

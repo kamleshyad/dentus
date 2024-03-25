@@ -1,6 +1,10 @@
+import Herosection from "../../components/Global/Herosection";
+
 const Home = () => {
     return (
-        <h1>Home</h1>
+        <>
+            <Herosection />
+        </>
     )
 }
 
