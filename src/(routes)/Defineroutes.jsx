@@ -1,6 +1,6 @@
 import Home from './home/Home';
 import About from './about-us/Aboutus';
-import Service from './service/Service';
+import Service from './services/Services';
 import Pages from './pages/Pages';
 import Blog from './blog/Blog';
 import Contact from './contact-us/Contact';
