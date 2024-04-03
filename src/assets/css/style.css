@@ -16,6 +16,7 @@ img{max-width: 100%; height: auto;}
     --color-limegreen : #67b930;
     --color-lightblue : #2b3fce;
     --color-lightviolet : #5a48e0;
+    --color-text : #5d5f6c;
 
     --font-family: "Archivo", sans-serif;
 }
@@ -49,6 +50,11 @@ a.secondarybtn:hover{transform: translateY(-5px);}
         transform: translateY(-10px);
     }
 }
+
+.servicesec{padding: 100px 0; text-align: center;}
+.servicesec h2{font-size: 42px; color: var(--color-black); font-weight: 700; line-height: 58px; margin-bottom: 25px;}
+.servicesec p{font-size: 18px; color: var(--color-text); font-weight: 500; line-height: 30px;}
+.servicesec h2 span, .servicesec p span{display: block;}
 
 .copyrightsec{padding: 15px; background: var(--color-lightviolet); text-align: center;}
 .copyrightsec p{color: var(--color-white); font-size: 16px; font-weight: 400;}

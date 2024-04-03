@@ -1,7 +1,9 @@
+import ServiceComp from "../../components/serviceComp";
+
 const Home = () => {
     return (
         <>
-
+            <ServiceComp />
         </>
     )
 }

@@ -4,7 +4,7 @@ import { NavLink, useLocation } from "react-router-dom";
 const Herosection = () => {
     let currentPath = useLocation();
     currentPath = currentPath.pathname;
-    console.log(currentPath)
+    //console.log(currentPath)
 
     const [caption, setCaption] = useState("");
 
