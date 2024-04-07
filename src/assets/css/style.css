@@ -5,9 +5,11 @@ body { margin: 0; padding: 0; font-family: var(--font-family); color: var(--colo
 
 a{text-decoration: none;}
 
-.container {max-width: min(1350px, 96%); margin: 0 auto; width: auto;}
+.container {max-width: min(1290px, 96%); margin: 0 auto; width: auto;}
+.sm-container {max-width: min(1170px, 96%); margin: 0 auto; width: auto;}
 .unset{padding: 0; margin: 0; list-style: none;}
 img{max-width: 100%; height: auto;}
+.main-container{padding: 100px 0;}
 
 :root{
     --color-black : #0b0f21;
@@ -17,6 +19,7 @@ img{max-width: 100%; height: auto;}
     --color-lightblue : #2b3fce;
     --color-lightviolet : #5a48e0;
     --color-text : #5d5f6c;
+    --color-border : #e2e0f1;
 
     --font-family: "Archivo", sans-serif;
 }
@@ -53,8 +56,15 @@ a.secondarybtn:hover{transform: translateY(-5px);}
 
 .servicesec{padding: 100px 0; text-align: center;}
 .servicesec h2{font-size: 42px; color: var(--color-black); font-weight: 700; line-height: 58px; margin-bottom: 25px;}
-.servicesec p{font-size: 18px; color: var(--color-text); font-weight: 500; line-height: 30px;}
+.servicesec p{font-size: 18px; color: var(--color-text); font-weight: 500; line-height: 30px; margin-bottom: 50px;}
 .servicesec h2 span, .servicesec p span{display: block;}
+.servicesec .servicelist ul, .serviceInnerpage .servicelist ul{display: grid; grid-template-columns: repeat(3,1fr); gap: 30px;}
+.servicewrap{padding: 30px; text-align: left; border-radius: 12px; border: 1px solid var(--color-border); transition: all 0.3s linear;}
+.servicewrap:hover{box-shadow: 0px 6px 14px rgba(0,0,0,0.2); border-color: var(--color-white);}
+.servicewrap h3{font-size: 24px; color: var(--color-black); font-weight: 700; line-height: 28px; margin: 25px 0;}
+.servicewrap p{ line-height: 26px; margin: 0;}
+.servicewrap a.viewbtn{display: inline-block; font-size: 16px; color: var(--color-lightviolet); font-weight: 600; line-height: 18px; margin-top: 25px; letter-spacing: 0.2px; transition: all 0.3s linear;}
+.servicewrap a.viewbtn:hover{color: var(--color-limegreen);}
 
 .copyrightsec{padding: 15px; background: var(--color-lightviolet); text-align: center;}
 .copyrightsec p{color: var(--color-white); font-size: 16px; font-weight: 400;}
